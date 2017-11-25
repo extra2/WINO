@@ -1,0 +1,38 @@
+﻿<Window x:Class="WINO.PDFOptions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WINO"
+        mc:Ignorable="d"
+        Title="Utwórz PDF" Height="422" Width="515.166">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\master\Documents\Visual Studio 2015\Projects\WINO\WINO\bin\Debug\1.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="textBoxIloscWierszy" HorizontalAlignment="Left" Height="22" Margin="195,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124"/>
+        <TextBox x:Name="textBoxIloscKolumn" HorizontalAlignment="Left" Height="21" Margin="194,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" RenderTransformOrigin="1.012,0.786"/>
+        <Label x:Name="labelKolumny" Content="Kolumny" HorizontalAlignment="Left" Margin="54,217,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="20" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="29" Width="124"/>
+        <Label x:Name="labelWiersze" Content="Wiersze" HorizontalAlignment="Left" Margin="69,247,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="20" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="30" Width="109"/>
+        <Label x:Name="labelPDFData" Content="Opcje PDF" HorizontalAlignment="Left" Margin="168,0,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="25" RenderTransformOrigin="0.88,-0.641" FontWeight="Bold" Height="34" Width="151"/>
+        <Button x:Name="buttonPDF" Content="Utwórz PDF" HorizontalAlignment="Left" Margin="168,300,0,0" VerticalAlignment="Top" Width="151" Height="70" Background="#FF8B85FF" FontSize="18" FontFamily="Showcard Gothic" Click="buttonGeneratePDF_Click"/>
+        <RadioButton x:Name="radioButtonBig" Content="Duża" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Checked="radioButtonBig_Checked" Height="20" Width="62" FontSize="18" Background="White" GroupName="Czcionka" />
+        <RadioButton x:Name="radioButtonMedium" Content="Średnia" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top" Checked="radioButtonTermBlack_Checked" Height="24" Width="83" FontSize="18" GroupName="Czcionka" />
+        <RadioButton x:Name="radioButtonSmall" Content="Mała" HorizontalAlignment="Left" Margin="22,144,0,0" VerticalAlignment="Top" Checked="radioButtonSmall_Checked" Height="26" Width="83" FontSize="18" GroupName="Czcionka"  />
+        <Label x:Name="labelCzcionka" Content="Czcionka:" HorizontalAlignment="Left" Margin="22,63,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="18" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="27" Width="112"/>
+        <RadioButton x:Name="radioButtonTermBlack" Content="Czarny" HorizontalAlignment="Left" Margin="156,95,0,0" VerticalAlignment="Top" Checked="radioButtonTermBlack_Checked" Height="25" Width="87" FontSize="18" GroupName="Term"/>
+        <RadioButton x:Name="radioButtonTermRed" Content="Czerwony" HorizontalAlignment="Left" Margin="156,120,0,0" VerticalAlignment="Top" Height="24" Width="104" FontSize="18" RenderTransformOrigin="0.543,0.396" Checked="radioButtonTermRed_Checked" GroupName="Term" />
+        <RadioButton x:Name="radioButtonTermGreen" Content="Zielony" HorizontalAlignment="Left" Margin="156,144,0,0" VerticalAlignment="Top" Height="28" Width="82" FontSize="18" Checked="radioButtonTermGreen_Checked" GroupName="Term"/>
+        <Label x:Name="labelColorTerm" Content="Kolor pojęcia:" HorizontalAlignment="Left" Margin="156,63,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="18" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="32" Width="172" />
+        <RadioButton x:Name="radioButtonDefBlack" Content="Czarny" HorizontalAlignment="Left" Margin="334,95,0,0" VerticalAlignment="Top" Checked="radioButtonDefBlack_Checked" Height="25" Width="87" FontSize="18" GroupName="Def" />
+        <RadioButton x:Name="radioButtonDefRed" Content="Czerwony" HorizontalAlignment="Left" Margin="334,120,0,0" VerticalAlignment="Top" Height="25" Width="100" FontSize="18" Checked="radioButtonDefRed_Checked" GroupName="Def"/>
+        <RadioButton x:Name="radioButtonDefGreen" Content="Zielony" HorizontalAlignment="Left" Margin="334,144,0,0" VerticalAlignment="Top" Height="24" Width="84" FontSize="18" Checked="radioButtonDefGreen_Checked" GroupName="Def"/>
+        <Label x:Name="labelColorDef" Content="Kolor Definicji:" HorizontalAlignment="Left" Margin="328,63,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="18" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="32" Width="175"/>
+        <Label x:Name="labelKolumnyIlosc" Content="(1-4)" HorizontalAlignment="Left" Margin="324,222,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="20" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="28" Width="124"/>
+        <Label x:Name="labelWierszeIlosc" Content="(1-10)" HorizontalAlignment="Left" Margin="324,255,0,0" VerticalAlignment="Top" FontFamily="Trajan Pro" FontSize="20" RenderTransformOrigin="0.674,0.438" FontWeight="Bold" Height="29" Width="124"/>
+
+    </Grid>
+</Window>
